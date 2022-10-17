@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+        color: #fff;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        border: 1px solid red;
+        padding: 1rem;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .column h1{
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .column>p {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(246, 235, 235);
+    }
+
+    .count{
+        background-color: hsl(248, 32%, 49%);
+        border-radius: 7px;
+        text-align:center;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem;
+        box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    #count {
+        font-weight: 600;
+    }
+
+    .count #price {
+        color: rgb(235, 224, 224);
+        font-weight: 400;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        color: rgb(166, 154, 154);
+        box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    input {
+        width: 100%;
+        padding: .8rem;
+        border-radius: 5px;
+        border: 1px solid rgb(191, 172, 172);
+        margin-bottom: 1rem;
+    }
+
+    button {
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 7px;
+        box-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+
+    small {
+        font-size: 10px;
+        padding: 1rem;
+    }
+
+    small>span {
+        color:  hsl(0, 100%, 74%);
+        font-weight: 700;
+    }
+
+ 
+    
+}
+
+@media screen and (min-width: 769px) {
+
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 1rem;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;  
+        margin-right: 6rem;
+    }
+
+    .desc {
+        width: 50%;
+    }
+
+    .column {
+        padding: 1.5rem;
+    }
+
+    .column h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        width: 75%;
+    }
+
+    .column>p {
+        font-size: 16px;
+        color: rgb(241, 214, 214);
+        font-weight: 500;
+        width: 90%;
+    }
+
+    #count {
+        background-color: hsl(248, 32%, 49%);
+        width: 100%;
+        height: 5rem;
+        border-radius: 10px;
+        padding-top: 1.5rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    #price {
+        color: rgb(207, 195, 195);
+        font-weight: 400;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 7px;
+        width: 100%;
+        height: 30rem;
+        box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+
+    }
+
+    input {
+        width: 100%;
+        padding: .8rem;
+        border-radius: 7px;
+        border: 1px solid rgb(207, 195, 195);
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        color: #fff;
+        padding: 1.2rem;
+        border-radius: 7px;
+        box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        margin-bottom: 1rem;
+        width: 30rem;
+    }
+
+    small {
+        color: rgb(172, 157, 157);
+        font-size: 12px;
+        text-align: center;
+    }
+
+    small>#terms {
+        color: hsl(0, 100%, 74%);
+        font-weight: 600;
+    }
+    
+}
